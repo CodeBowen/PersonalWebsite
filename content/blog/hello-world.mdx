@@ -1,0 +1,42 @@
+export const metadata = {
+  title: "Hello, world",
+  summary: "Why I built this site, and what I plan to write about here.",
+  date: "2026-11-17",
+  draft: false,
+};
+
+{/* TODO(content): replace this placeholder post with your first real one. */}
+
+This is a placeholder post. Replace it with your first real one.
+
+Posts are MDX files in `content/blog/`. Each one starts with an
+`export const metadata = { ... }` block, and the rest is Markdown.
+
+## Code blocks are highlighted
+
+```ts title="lib/greet.ts"
+export function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+```
+
+## Videos
+
+Embed a YouTube video with the built-in component (no import needed):
+
+{/* <YouTube id="YOUTUBE_VIDEO_ID" title="Describe the video" /> */}
+
+```mdx
+<YouTube id="YOUTUBE_VIDEO_ID" title="Describe the video" />
+```
+
+## Photos
+
+Put photos in `public/` and reference them with Markdown, or import them and use
+`<Image />` for automatic resizing:
+
+```mdx
+import photo from "./my-photo.jpg";
+
+<Image src={photo} alt="What the photo shows" />
+```

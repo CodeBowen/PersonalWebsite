@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --muted: #5f6368;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --code-bg: #f6f8fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b0b0c;
+    --foreground: #ededed;
+    --muted: #a1a1aa;
+    --border: #27272a;
+    --accent: #60a5fa;
+    --code-bg: #161b22;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Code blocks from rehype-pretty-code: switch Shiki themes with the system. */
+[data-rehype-pretty-code-figure] pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}
+
+[data-rehype-pretty-code-figure] code[data-theme] span {
+  color: var(--shiki-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-rehype-pretty-code-figure] code[data-theme] span {
+    color: var(--shiki-dark);
+  }
+}
