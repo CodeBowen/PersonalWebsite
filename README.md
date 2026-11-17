@@ -3,6 +3,8 @@
 Personal site: portfolio, blog, and a place to learn Next.js.
 Built with Next.js 16 (App Router, Cache Components), TypeScript, Tailwind CSS and MDX. Hosted on Vercel.
 
+Repository: https://github.com/CodeBowen/PersonalWebsite
+
 ## Run it
 
 ```bash
@@ -37,8 +39,12 @@ Search the codebase for `TODO(content)` to find every placeholder to replace.
 
 ## Deploy (first time)
 
-1. Push this folder to a public GitHub repo.
-2. Import the repo at vercel.com (Hobby plan). No settings needed.
+1. Push to GitHub (the remote is already set to `CodeBowen/PersonalWebsite`):
+   ```bash
+   git push -u origin main
+   ```
+2. At vercel.com (Hobby plan), **Add New → Project** and import `CodeBowen/PersonalWebsite`. No build settings needed.
+   Every later `git push` to `main` redeploys automatically.
 3. In Vercel: **Settings → Environment Variables**, set `NEXT_PUBLIC_SITE_URL=https://bowenzhang.dev`.
 4. Buy `bowenzhang.dev`, add it under **Settings → Domains**, and follow the DNS instructions.
 5. **Analytics → Enable** to turn on Vercel Web Analytics.

@@ -22,8 +22,8 @@ export const site = {
   // TODO(content): set up this alias (e.g. Cloudflare Email Routing) to forward to your inbox.
   email: "hello@bowenzhang.dev",
   links: {
-    // TODO(content): replace with your real profile URLs.
-    github: "https://github.com/your-github-username",
+    // TODO(content): replace the LinkedIn URL with your real profile.
+    github: "https://github.com/CodeBowen",
     linkedin: "https://www.linkedin.com/in/your-linkedin-id",
   },
   nav: [
